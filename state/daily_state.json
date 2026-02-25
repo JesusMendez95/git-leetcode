@@ -20,7 +20,7 @@
     },
     {
       "date": "2026-02-25",
-      "generated_at": "2026-02-25T10:25:14.790556Z",
+      "generated_at": "2026-02-25T13:40:45.624758Z",
       "challenge": {
         "topic": "Arrays & Strings",
         "title": "Find Closest Number to Zero",
@@ -31,9 +31,41 @@
         "problem_url": "https://leetcode.com/problems/find-closest-number-to-zero/description/",
         "roadmap_url": "https://algomap.io/problems/find-closest-number-to-zero"
       },
+      "problem_details": {
+        "title": "Find Closest Number to Zero",
+        "description_markdown": "Given an integer array nums of size n , return the number with the value closest to 0 in nums . If there are multiple answers, return the number with the largest value .\n\nExample 1:\n\n```text\nInput:\nnums = [-4,-2,1,4,8]\nOutput:\n1\nExplanation:\nThe distance from -4 to 0 is |-4| = 4.\nThe distance from -2 to 0 is |-2| = 2.\nThe distance from 1 to 0 is |1| = 1.\nThe distance from 4 to 0 is |4| = 4.\nThe distance from 8 to 0 is |8| = 8.\nThus, the closest number to 0 in the array is 1.\n```\n\nExample 2:\n\n```text\nInput:\nnums = [2,-1,1]\nOutput:\n1\nExplanation:\n1 and -1 are both the closest numbers to 0, so 1 being larger is returned.\n```\n\nConstraints:\n\n- 1 <= n <= 1000\n- -10 ^5 <= nums[i] <= 10 ^5",
+        "examples": [
+          "Example 1:",
+          "```text",
+          "Input:",
+          "nums = [-4,-2,1,4,8]",
+          "Output:",
+          "1",
+          "Explanation:",
+          "The distance from -4 to 0 is |-4| = 4.",
+          "The distance from -2 to 0 is |-2| = 2.",
+          "The distance from 1 to 0 is |1| = 1.",
+          "The distance from 4 to 0 is |4| = 4.",
+          "The distance from 8 to 0 is |8| = 8.",
+          "Thus, the closest number to 0 in the array is 1.",
+          "```",
+          "Example 2:",
+          "```text",
+          "Input:",
+          "nums = [2,-1,1]",
+          "Output:",
+          "1",
+          "Explanation:",
+          "1 and -1 are both the closest numbers to 0, so 1 being larger is returned.",
+          "```"
+        ],
+        "constraints": [
+          "1 <= n <= 1000",
+          "-10 ^5 <= nums[i] <= 10 ^5"
+        ]
+      },
       "solution_path": "solutions/python/2239-find-closest-number-to-zero.py",
-      "readme_path": "docs/2239-find-closest-number-to-zero/README.md",
-      "process_path": "docs/2239-find-closest-number-to-zero/process.md",
+      "documentation_path": "docs/2239-find-closest-number-to-zero/process.md",
       "screenshot_path": null
     }
   ]

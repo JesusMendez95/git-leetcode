@@ -8,6 +8,7 @@ from pathlib import Path
 
 from .algomap_scraper import build_catalog, load_catalog
 from .documentation import write_docs, write_solution_file
+from .leetcode_details import fetch_problem_details, problem_details_to_dict
 from .models import Challenge
 from .solver import can_solve, solve_challenge
 
@@ -98,6 +99,7 @@ def run_daily_pipeline(
         raise RuntimeError(f"No se encontro el reto con ID {force_problem_id} en el catalogo.")
 
     result = solve_challenge(challenge)
+    problem_details = fetch_problem_details(challenge.slug, challenge.title)
     solution_path = write_solution_file(repo_dir / "solutions", result)
 
     doc_dir = repo_dir / "docs" / f"{challenge.leetcode_id}-{challenge.slug}"
@@ -108,9 +110,10 @@ def run_daily_pipeline(
             f"Adjunta: {screenshot_path} y vuelve a ejecutar."
         )
 
-    readme_path, process_path = write_docs(
+    process_path = write_docs(
         base_docs_dir=repo_dir / "docs",
         result=result,
+        problem_details=problem_details,
         run_date=run_date,
         screenshot_path=screenshot_path if screenshot_path.exists() else None,
     )
@@ -120,9 +123,9 @@ def run_daily_pipeline(
         "date": run_date.isoformat(),
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "challenge": asdict(challenge),
+        "problem_details": problem_details_to_dict(problem_details),
         "solution_path": str(solution_path.relative_to(repo_dir)),
-        "readme_path": str(readme_path.relative_to(repo_dir)),
-        "process_path": str(process_path.relative_to(repo_dir)),
+        "documentation_path": str(process_path.relative_to(repo_dir)),
         "screenshot_path": str(screenshot_path.relative_to(repo_dir)) if screenshot_path.exists() else None,
     }
     state["history"] = [h for h in state.get("history", []) if h.get("date") != run_date.isoformat()]

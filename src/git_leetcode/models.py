@@ -26,3 +26,14 @@ class SolveResult:
     language: str
     explanation: str
     complexity: str
+    walkthrough_steps: list[str]
+    why_it_works: str
+    mermaid_diagram: str
+
+
+@dataclass(slots=True)
+class ProblemDetails:
+    title: str
+    description_markdown: str
+    examples: list[str]
+    constraints: list[str]

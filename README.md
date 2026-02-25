@@ -1,22 +1,20 @@
 # Git LeetCode Daily Automation
 
-Proyecto en Python para:
+Automatiza un flujo diario para retos de LeetCode usando el roadmap de AlgoMap:
 
-- Extraer retos estructurados desde `https://algomap.io/roadmap`.
-- Resolver retos (inicialmente con registry de solvers por LeetCode ID).
-- Generar documentacion por reto (`README.md` y `process.md`).
-- Adjuntar screenshot de envio exitoso.
-- Publicar automaticamente a GitHub una vez al dia (cron local).
+- extrae retos estructurados desde `https://algomap.io/roadmap`,
+- genera solucion en Python,
+- crea documentacion con descripcion del problema,
+- genera explicacion tecnica con diagrama Mermaid,
+- y publica cambios a GitHub (cron local).
 
 ## Estructura
 
-- `data/algomap_challenges.json`: catalogo de retos extraidos.
-- `solutions/python/`: soluciones en Python.
-- `docs/<id-slug>/README.md`: documentacion de la solucion.
-- `docs/<id-slug>/process.md`: proceso de resolucion.
+- `data/algomap_challenges.json`: catalogo de retos.
+- `solutions/python/`: soluciones.
+- `docs/<id-slug>/process.md`: documentacion completa del reto.
 - `docs/<id-slug>/screenshots/`: evidencia de envio exitoso.
-- `state/daily_state.json`: historial de ejecuciones diarias.
-- `scripts/run_daily.py`: orquestador diario.
+- `state/daily_state.json`: historial de ejecuciones.
 
 ## Instalacion
 
@@ -26,39 +24,36 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Configuracion inicial
-
-1. Crear `.env` desde `.env.example` y completar `GIT_REMOTE_URL`.
-   - O usa el helper: `bash scripts/setup_git_remote.sh git-leetcode`
-2. Exportar variables (si no usas dotenv):
+## Configuracion
 
 ```bash
-export ROADMAP_URL="https://algomap.io/roadmap"
-export GIT_REMOTE_URL="https://github.com/JesusMendez95/<tu-repo>.git"
+cp .env.example .env
 ```
 
-3. Generar catalogo:
+Valores recomendados en `.env`:
+
+```env
+GIT_REMOTE_URL=git@github.com:JesusMendez95/git-leetcode.git
+DEFAULT_LANGUAGE=python
+GITHUB_USERNAME=JesusMendez95
+ROADMAP_URL=https://algomap.io/roadmap
+```
+
+Si necesitas crear/configurar `origin`:
 
 ```bash
-python scripts/bootstrap_catalog.py
+bash scripts/setup_git_remote.sh git-leetcode
 ```
 
-4. Autenticacion GitHub para push (obligatorio):
+## Ejecucion diaria
 
-```bash
-git remote -v
-# Si usas HTTPS, configura credenciales con un Personal Access Token (repo scope)
-# o cambia a SSH cuando tengas llave privada:
-# git remote set-url origin git@github.com:JesusMendez95/git-leetcode.git
-```
-
-## Flujo diario
+Primera corrida (permite continuar sin screenshot):
 
 ```bash
 python scripts/run_daily.py --allow-missing-screenshot --skip-push
 ```
 
-Despues de enviar el reto en LeetCode, guarda screenshot en:
+Despues de resolver y enviar en LeetCode, adjunta screenshot en:
 
 `docs/<id-slug>/screenshots/<YYYY-MM-DD>-success.png`
 
@@ -68,20 +63,14 @@ Luego ejecuta:
 python scripts/run_daily.py
 ```
 
-Eso genera commit y push si el remote esta configurado y hay screenshot.
-
-## Automatizacion con cron local
+## Cron local
 
 ```bash
 bash scripts/setup_cron.sh 08:00
 ```
 
-Esto ejecuta `scripts/run_daily.py` todos los dias a las 08:00 y deja logs en `logs/daily.log`.
+El log queda en `logs/daily.log`.
 
-## Nota sobre solvers
+## Notas de documentacion
 
-El proyecto viene con un solver implementado:
-
-- `2239 - Find Closest Number to Zero`
-
-Para agregar mas retos, extiende `src/git_leetcode/solver.py` con nuevos IDs.
+- `process.md` incluye metadata, descripcion oficial del problema, solucion, enfoque, diagrama Mermaid, desglose del codigo, justificacion del algoritmo, complejidad y evidencia.

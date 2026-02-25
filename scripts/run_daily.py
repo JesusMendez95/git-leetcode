@@ -64,8 +64,7 @@ def main() -> None:
     print("Ejecucion completada")
     print(f"- Reto: {entry['challenge']['leetcode_id']} {entry['challenge']['title']}")
     print(f"- Solucion: {entry['solution_path']}")
-    print(f"- Doc: {entry['readme_path']}")
-    print(f"- Proceso: {entry['process_path']}")
+    print(f"- Documentacion: {entry['documentation_path']}")
     print(f"- Screenshot: {entry['screenshot_path']}")
 
 

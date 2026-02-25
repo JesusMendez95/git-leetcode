@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import date
 from pathlib import Path
 
-from .models import SolveResult
+from .models import ProblemDetails, SolveResult
 
 
 def _challenge_dir(base_docs_dir: Path, result: SolveResult) -> Path:
@@ -22,9 +22,10 @@ def write_solution_file(base_solutions_dir: Path, result: SolveResult) -> Path:
 def write_docs(
     base_docs_dir: Path,
     result: SolveResult,
+    problem_details: ProblemDetails,
     run_date: date,
     screenshot_path: Path | None,
-) -> tuple[Path, Path]:
+) -> Path:
     target_dir = _challenge_dir(base_docs_dir, result)
     screenshots_dir = target_dir / "screenshots"
     target_dir.mkdir(parents=True, exist_ok=True)
@@ -35,43 +36,42 @@ def write_docs(
         rel = screenshot_path.relative_to(target_dir)
         screenshot_block = f"![Envio exitoso]({rel.as_posix()})"
 
-    readme = f"""# {result.challenge.title}
+    walkthrough_block = "\n".join(
+        f"{idx}. {step}" for idx, step in enumerate(result.walkthrough_steps, start=1)
+    )
 
-- Fecha: {run_date.isoformat()}
-- Topic: {result.challenge.topic}
-- Dificultad: {result.challenge.difficulty}
-- LeetCode ID: {result.challenge.leetcode_id}
-- Problema: {result.challenge.problem_url}
-- Referencia en AlgoMap: {result.challenge.roadmap_url}
+    process = (
+        f"# {result.challenge.title}\n\n"
+        f"- Fecha: {run_date.isoformat()}\n"
+        f"- Topic: {result.challenge.topic}\n"
+        f"- Dificultad: {result.challenge.difficulty}\n"
+        f"- LeetCode ID: {result.challenge.leetcode_id}\n"
+        f"- Problema: {result.challenge.problem_url}\n"
+        f"- Referencia en AlgoMap: {result.challenge.roadmap_url}\n\n"
+        f"## Solucion ({result.language})\n\n"
+        f"Archivo: `solutions/{result.language}/{result.challenge.leetcode_id}-{result.challenge.slug}.py`\n\n"
+        "### Codigo\n\n"
+        f"```{result.language}\n"
+        f"{result.code.rstrip()}\n"
+        "```\n\n"
+        "## Descripcion del problema (LeetCode)\n\n"
+        f"{problem_details.description_markdown}\n\n"
+        "## Enfoque\n\n"
+        f"{result.explanation}\n\n"
+        "## Diagrama del algoritmo\n\n"
+        "```mermaid\n"
+        f"{result.mermaid_diagram}\n"
+        "```\n\n"
+        "## Desglose paso a paso del codigo\n\n"
+        f"{walkthrough_block}\n\n"
+        "## Por que funciona\n\n"
+        f"{result.why_it_works}\n\n"
+        "## Complejidad\n\n"
+        f"{result.complexity}\n\n"
+        "## Evidencia\n\n"
+        f"{screenshot_block}\n"
+    )
 
-## Solucion ({result.language})
-
-Archivo: `solutions/{result.language}/{result.challenge.leetcode_id}-{result.challenge.slug}.py`
-
-## Evidencia
-
-{screenshot_block}
-"""
-
-    process = f"""# Proceso de resolucion - {result.challenge.title}
-
-## Enfoque
-
-{result.explanation}
-
-## Complejidad
-
-{result.complexity}
-
-## Validacion recomendada
-
-1. Ejecutar casos simples (positivos, negativos, empate de valor absoluto).
-2. Verificar que, en empate, se elige el numero positivo.
-3. Confirmar envio exitoso en LeetCode y adjuntar screenshot en `docs/{result.challenge.leetcode_id}-{result.challenge.slug}/screenshots/`.
-"""
-
-    readme_path = target_dir / "README.md"
     process_path = target_dir / "process.md"
-    readme_path.write_text(readme, encoding="utf-8")
     process_path.write_text(process, encoding="utf-8")
-    return readme_path, process_path
+    return process_path
