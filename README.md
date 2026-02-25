@@ -43,6 +43,15 @@ export GIT_REMOTE_URL="https://github.com/JesusMendez95/<tu-repo>.git"
 python scripts/bootstrap_catalog.py
 ```
 
+4. Autenticacion GitHub para push (obligatorio):
+
+```bash
+git remote -v
+# Si usas HTTPS, configura credenciales con un Personal Access Token (repo scope)
+# o cambia a SSH cuando tengas llave privada:
+# git remote set-url origin git@github.com:JesusMendez95/git-leetcode.git
+```
+
 ## Flujo diario
 
 ```bash
