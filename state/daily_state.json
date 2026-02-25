@@ -1,0 +1,40 @@
+{
+  "history": [
+    {
+      "date": "2026-02-24",
+      "generated_at": "2026-02-24T23:35:56.998181Z",
+      "challenge": {
+        "topic": "Arrays & Strings",
+        "title": "Find Closest Number to Zero",
+        "difficulty": "Easy",
+        "difficulty_score": "3/10",
+        "leetcode_id": 2239,
+        "slug": "find-closest-number-to-zero",
+        "problem_url": "https://leetcode.com/problems/find-closest-number-to-zero/description/",
+        "roadmap_url": "https://algomap.io/problems/find-closest-number-to-zero"
+      },
+      "solution_path": "solutions/python/2239-find-closest-number-to-zero.py",
+      "readme_path": "docs/2239-find-closest-number-to-zero/README.md",
+      "process_path": "docs/2239-find-closest-number-to-zero/process.md",
+      "screenshot_path": null
+    },
+    {
+      "date": "2026-02-25",
+      "generated_at": "2026-02-25T10:25:14.790556Z",
+      "challenge": {
+        "topic": "Arrays & Strings",
+        "title": "Find Closest Number to Zero",
+        "difficulty": "Easy",
+        "difficulty_score": "3/10",
+        "leetcode_id": 2239,
+        "slug": "find-closest-number-to-zero",
+        "problem_url": "https://leetcode.com/problems/find-closest-number-to-zero/description/",
+        "roadmap_url": "https://algomap.io/problems/find-closest-number-to-zero"
+      },
+      "solution_path": "solutions/python/2239-find-closest-number-to-zero.py",
+      "readme_path": "docs/2239-find-closest-number-to-zero/README.md",
+      "process_path": "docs/2239-find-closest-number-to-zero/process.md",
+      "screenshot_path": null
+    }
+  ]
+}

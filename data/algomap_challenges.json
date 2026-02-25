@@ -1,0 +1,1006 @@
+{
+  "source": "https://algomap.io/roadmap",
+  "count": 100,
+  "challenges": [
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "difficulty_score": "6/10",
+      "leetcode_id": 1,
+      "slug": "two-sum",
+      "problem_url": "https://leetcode.com/problems/two-sum/",
+      "roadmap_url": "https://algomap.io/problems/two-sum"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "difficulty_score": "5.5/10",
+      "leetcode_id": 3,
+      "slug": "longest-substring-without-repeating-characters",
+      "problem_url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "roadmap_url": "https://algomap.io/problems/longest-substring-without-repeating-characters"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "difficulty_score": "7.5/10",
+      "leetcode_id": 11,
+      "slug": "container-with-most-water",
+      "problem_url": "https://leetcode.com/problems/container-with-most-water/",
+      "roadmap_url": "https://algomap.io/problems/container-with-most-water"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Roman to Integer",
+      "difficulty": "Easy",
+      "difficulty_score": "4.5/10",
+      "leetcode_id": 13,
+      "slug": "roman-to-integer",
+      "problem_url": "https://leetcode.com/problems/roman-to-integer/",
+      "roadmap_url": "https://algomap.io/problems/roman-to-integer"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Longest Common Prefix",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 14,
+      "slug": "longest-common-prefix",
+      "problem_url": "https://leetcode.com/problems/longest-common-prefix/",
+      "roadmap_url": "https://algomap.io/problems/longest-common-prefix"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 15,
+      "slug": "3sum",
+      "problem_url": "https://leetcode.com/problems/3sum/",
+      "roadmap_url": "https://algomap.io/problems/3sum"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Letter Combinations of a Phone Number",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 17,
+      "slug": "letter-combinations-of-a-phone-number",
+      "problem_url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+      "roadmap_url": "https://algomap.io/problems/letter-combinations-of-a-phone-number"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Remove Nth Node from End of List",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 19,
+      "slug": "remove-nth-node-from-end-of-list",
+      "problem_url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      "roadmap_url": "https://algomap.io/problems/remove-nth-node-from-end-of-list"
+    },
+    {
+      "topic": "Stacks",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "difficulty_score": "5.5/10",
+      "leetcode_id": 20,
+      "slug": "valid-parentheses",
+      "problem_url": "https://leetcode.com/problems/valid-parentheses/",
+      "roadmap_url": "https://algomap.io/problems/valid-parentheses"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 21,
+      "slug": "merge-two-sorted-lists",
+      "problem_url": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "roadmap_url": "https://algomap.io/problems/merge-two-sorted-lists"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Generate Parentheses",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 22,
+      "slug": "generate-parentheses",
+      "problem_url": "https://leetcode.com/problems/generate-parentheses/",
+      "roadmap_url": "https://algomap.io/problems/generate-parentheses"
+    },
+    {
+      "topic": "Heaps",
+      "title": "Merge K Sorted Linked Lists",
+      "difficulty": "Hard",
+      "difficulty_score": "8/10",
+      "leetcode_id": 23,
+      "slug": "merge-k-sorted-lists",
+      "problem_url": "https://leetcode.com/problems/merge-k-sorted-lists/",
+      "roadmap_url": "https://algomap.io/problems/merge-k-sorted-lists"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 33,
+      "slug": "search-in-rotated-sorted-array",
+      "problem_url": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "roadmap_url": "https://algomap.io/problems/search-in-rotated-sorted-array"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Search Insert Position",
+      "difficulty": "Easy",
+      "difficulty_score": "3.5/10",
+      "leetcode_id": 35,
+      "slug": "search-insert-position",
+      "problem_url": "https://leetcode.com/problems/search-insert-position/",
+      "roadmap_url": "https://algomap.io/problems/search-insert-position"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 36,
+      "slug": "valid-sudoku",
+      "problem_url": "https://leetcode.com/problems/valid-sudoku/",
+      "roadmap_url": "https://algomap.io/problems/valid-sudoku"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Combination Sum",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 39,
+      "slug": "combination-sum",
+      "problem_url": "https://leetcode.com/problems/combination-sum/",
+      "roadmap_url": "https://algomap.io/problems/combination-sum"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "difficulty_score": "9/10",
+      "leetcode_id": 42,
+      "slug": "trapping-rain-water",
+      "problem_url": "https://leetcode.com/problems/trapping-rain-water/",
+      "roadmap_url": "https://algomap.io/problems/trapping-rain-water"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Permutations",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 46,
+      "slug": "permutations",
+      "problem_url": "https://leetcode.com/problems/permutations/",
+      "roadmap_url": "https://algomap.io/problems/permutations"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Rotate Image",
+      "difficulty": "Medium",
+      "difficulty_score": "9/10",
+      "leetcode_id": 48,
+      "slug": "rotate-image",
+      "problem_url": "https://leetcode.com/problems/rotate-image/",
+      "roadmap_url": "https://algomap.io/problems/rotate-image"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "difficulty_score": "7.5/10",
+      "leetcode_id": 49,
+      "slug": "group-anagrams",
+      "problem_url": "https://leetcode.com/problems/group-anagrams/",
+      "roadmap_url": "https://algomap.io/problems/group-anagrams"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Maximum Subarray (Kadane's Algorithm)",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 53,
+      "slug": "maximum-subarray",
+      "problem_url": "https://leetcode.com/problems/maximum-subarray/",
+      "roadmap_url": "https://algomap.io/problems/maximum-subarray"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Spiral Matrix",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 54,
+      "slug": "spiral-matrix",
+      "problem_url": "https://leetcode.com/problems/spiral-matrix/",
+      "roadmap_url": "https://algomap.io/problems/spiral-matrix"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Jump Game",
+      "difficulty": "Medium",
+      "difficulty_score": "7.5/10",
+      "leetcode_id": 55,
+      "slug": "jump-game",
+      "problem_url": "https://leetcode.com/problems/jump-game/",
+      "roadmap_url": "https://algomap.io/problems/jump-game"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Merge Intervals",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 56,
+      "slug": "merge-intervals",
+      "problem_url": "https://leetcode.com/problems/merge-intervals/",
+      "roadmap_url": "https://algomap.io/problems/merge-intervals"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Unique Paths",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 62,
+      "slug": "unique-paths",
+      "problem_url": "https://leetcode.com/problems/unique-paths/",
+      "roadmap_url": "https://algomap.io/problems/unique-paths"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 70,
+      "slug": "climbing-stairs",
+      "problem_url": "https://leetcode.com/problems/climbing-stairs/",
+      "roadmap_url": "https://algomap.io/problems/climbing-stairs"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Search a 2D Matrix",
+      "difficulty": "Medium",
+      "difficulty_score": "5/10",
+      "leetcode_id": 74,
+      "slug": "search-a-2d-matrix",
+      "problem_url": "https://leetcode.com/problems/search-a-2d-matrix/",
+      "roadmap_url": "https://algomap.io/problems/search-a-2d-matrix"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Combinations",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 77,
+      "slug": "combinations",
+      "problem_url": "https://leetcode.com/problems/combinations/",
+      "roadmap_url": "https://algomap.io/problems/combinations"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Subsets",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 78,
+      "slug": "subsets",
+      "problem_url": "https://leetcode.com/problems/subsets/",
+      "roadmap_url": "https://algomap.io/problems/subsets"
+    },
+    {
+      "topic": "Recursive Backtracking",
+      "title": "Word Search",
+      "difficulty": "Medium",
+      "difficulty_score": "9/10",
+      "leetcode_id": 79,
+      "slug": "word-search",
+      "problem_url": "https://leetcode.com/problems/word-search/",
+      "roadmap_url": "https://algomap.io/problems/word-search"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Remove Duplicates from Sorted List",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 83,
+      "slug": "remove-duplicates-from-sorted-list",
+      "problem_url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+      "roadmap_url": "https://algomap.io/problems/remove-duplicates-from-sorted-list"
+    },
+    {
+      "topic": "Trees",
+      "title": "Validate Binary Search Tree",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 98,
+      "slug": "validate-binary-search-tree",
+      "problem_url": "https://leetcode.com/problems/validate-binary-search-tree/",
+      "roadmap_url": "https://algomap.io/problems/validate-binary-search-tree"
+    },
+    {
+      "topic": "Trees",
+      "title": "Same Binary Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 100,
+      "slug": "same-tree",
+      "problem_url": "https://leetcode.com/problems/same-tree/",
+      "roadmap_url": "https://algomap.io/problems/same-tree"
+    },
+    {
+      "topic": "Trees",
+      "title": "Symmetric Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 101,
+      "slug": "symmetric-tree",
+      "problem_url": "https://leetcode.com/problems/symmetric-tree/",
+      "roadmap_url": "https://algomap.io/problems/symmetric-tree"
+    },
+    {
+      "topic": "Trees",
+      "title": "Binary Tree Level Order Traversal (BFS)",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 102,
+      "slug": "binary-tree-level-order-traversal",
+      "problem_url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "roadmap_url": "https://algomap.io/problems/binary-tree-level-order-traversal"
+    },
+    {
+      "topic": "Trees",
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 104,
+      "slug": "maximum-depth-of-binary-tree",
+      "problem_url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "roadmap_url": "https://algomap.io/problems/maximum-depth-of-binary-tree"
+    },
+    {
+      "topic": "Trees",
+      "title": "Balanced Binary Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 110,
+      "slug": "balanced-binary-tree",
+      "problem_url": "https://leetcode.com/problems/balanced-binary-tree/",
+      "roadmap_url": "https://algomap.io/problems/balanced-binary-tree"
+    },
+    {
+      "topic": "Trees",
+      "title": "Path Sum",
+      "difficulty": "Easy",
+      "difficulty_score": "5.5/10",
+      "leetcode_id": 112,
+      "slug": "path-sum",
+      "problem_url": "https://leetcode.com/problems/path-sum/",
+      "roadmap_url": "https://algomap.io/problems/path-sum"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 121,
+      "slug": "best-time-to-buy-and-sell-stock",
+      "problem_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "roadmap_url": "https://algomap.io/problems/best-time-to-buy-and-sell-stock"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 125,
+      "slug": "valid-palindrome",
+      "problem_url": "https://leetcode.com/problems/valid-palindrome/",
+      "roadmap_url": "https://algomap.io/problems/valid-palindrome"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Hard",
+      "difficulty_score": "8.5/10",
+      "leetcode_id": 128,
+      "slug": "longest-consecutive-sequence",
+      "problem_url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+      "roadmap_url": "https://algomap.io/problems/longest-consecutive-sequence"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 133,
+      "slug": "clone-graph",
+      "problem_url": "https://leetcode.com/problems/clone-graph/",
+      "roadmap_url": "https://algomap.io/problems/clone-graph"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Copy List with Random Pointer",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 138,
+      "slug": "copy-list-with-random-pointer",
+      "problem_url": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+      "roadmap_url": "https://algomap.io/problems/copy-list-with-random-pointer"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "difficulty_score": "6/10",
+      "leetcode_id": 141,
+      "slug": "linked-list-cycle",
+      "problem_url": "https://leetcode.com/problems/linked-list-cycle/",
+      "roadmap_url": "https://algomap.io/problems/linked-list-cycle"
+    },
+    {
+      "topic": "Stacks",
+      "title": "Evaluate Reverse Polish Notation (RPN)",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 150,
+      "slug": "evaluate-reverse-polish-notation",
+      "problem_url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+      "roadmap_url": "https://algomap.io/problems/evaluate-reverse-polish-notation"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 153,
+      "slug": "find-minimum-in-rotated-sorted-array",
+      "problem_url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+      "roadmap_url": "https://algomap.io/problems/find-minimum-in-rotated-sorted-array"
+    },
+    {
+      "topic": "Stacks",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 155,
+      "slug": "min-stack",
+      "problem_url": "https://leetcode.com/problems/min-stack/",
+      "roadmap_url": "https://algomap.io/problems/min-stack"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "difficulty": "Medium",
+      "difficulty_score": "5/10",
+      "leetcode_id": 167,
+      "slug": "two-sum-ii-input-array-is-sorted",
+      "problem_url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+      "roadmap_url": "https://algomap.io/problems/two-sum-ii-input-array-is-sorted"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "difficulty_score": "8/10",
+      "leetcode_id": 169,
+      "slug": "majority-element",
+      "problem_url": "https://leetcode.com/problems/majority-element/",
+      "roadmap_url": "https://algomap.io/problems/majority-element"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "House Robber",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 198,
+      "slug": "house-robber",
+      "problem_url": "https://leetcode.com/problems/house-robber/",
+      "roadmap_url": "https://algomap.io/problems/house-robber"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 200,
+      "slug": "number-of-islands",
+      "problem_url": "https://leetcode.com/problems/number-of-islands/",
+      "roadmap_url": "https://algomap.io/problems/number-of-islands"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 206,
+      "slug": "reverse-linked-list",
+      "problem_url": "https://leetcode.com/problems/reverse-linked-list/",
+      "roadmap_url": "https://algomap.io/problems/reverse-linked-list"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Course Schedule (Detecting Cycles in a Graph)",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 207,
+      "slug": "course-schedule",
+      "problem_url": "https://leetcode.com/problems/course-schedule/",
+      "roadmap_url": "https://algomap.io/problems/course-schedule"
+    },
+    {
+      "topic": "Trees",
+      "title": "Implement Trie (Prefix Tree)",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 208,
+      "slug": "implement-trie-prefix-tree",
+      "problem_url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+      "roadmap_url": "https://algomap.io/problems/implement-trie-prefix-tree"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Minimum Size Subarray Sum",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 209,
+      "slug": "minimum-size-subarray-sum",
+      "problem_url": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+      "roadmap_url": "https://algomap.io/problems/minimum-size-subarray-sum"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Course Schedule II (Topological Sort)",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 210,
+      "slug": "course-schedule-ii",
+      "problem_url": "https://leetcode.com/problems/course-schedule-ii/",
+      "roadmap_url": "https://algomap.io/problems/course-schedule-ii"
+    },
+    {
+      "topic": "Heaps",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 215,
+      "slug": "kth-largest-element-in-an-array",
+      "problem_url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "roadmap_url": "https://algomap.io/problems/kth-largest-element-in-an-array"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "difficulty_score": "3/10",
+      "leetcode_id": 217,
+      "slug": "contains-duplicate",
+      "problem_url": "https://leetcode.com/problems/contains-duplicate/",
+      "roadmap_url": "https://algomap.io/problems/contains-duplicate"
+    },
+    {
+      "topic": "Trees",
+      "title": "Invert Binary Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "3/10",
+      "leetcode_id": 226,
+      "slug": "invert-binary-tree",
+      "problem_url": "https://leetcode.com/problems/invert-binary-tree/",
+      "roadmap_url": "https://algomap.io/problems/invert-binary-tree"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Summary Ranges",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 228,
+      "slug": "summary-ranges",
+      "problem_url": "https://leetcode.com/problems/summary-ranges/",
+      "roadmap_url": "https://algomap.io/problems/summary-ranges"
+    },
+    {
+      "topic": "Trees",
+      "title": "Kth Smallest Element in a BST",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 230,
+      "slug": "kth-smallest-element-in-a-bst",
+      "problem_url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+      "roadmap_url": "https://algomap.io/problems/kth-smallest-element-in-a-bst"
+    },
+    {
+      "topic": "Trees",
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 235,
+      "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+      "problem_url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "roadmap_url": "https://algomap.io/problems/lowest-common-ancestor-of-a-binary-search-tree"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 238,
+      "slug": "product-of-array-except-self",
+      "problem_url": "https://leetcode.com/problems/product-of-array-except-self/",
+      "roadmap_url": "https://algomap.io/problems/product-of-array-except-self"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 242,
+      "slug": "valid-anagram",
+      "problem_url": "https://leetcode.com/problems/valid-anagram/",
+      "roadmap_url": "https://algomap.io/problems/valid-anagram"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "First Bad Version",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 278,
+      "slug": "first-bad-version",
+      "problem_url": "https://leetcode.com/problems/first-bad-version/",
+      "roadmap_url": "https://algomap.io/problems/first-bad-version"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Longest Increasing Subsequence",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 300,
+      "slug": "longest-increasing-subsequence",
+      "problem_url": "https://leetcode.com/problems/longest-increasing-subsequence/",
+      "roadmap_url": "https://algomap.io/problems/longest-increasing-subsequence"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Coin Change",
+      "difficulty": "Medium",
+      "difficulty_score": "7.5/10",
+      "leetcode_id": 322,
+      "slug": "coin-change",
+      "problem_url": "https://leetcode.com/problems/coin-change/",
+      "roadmap_url": "https://algomap.io/problems/coin-change"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Reverse String",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 344,
+      "slug": "reverse-string",
+      "problem_url": "https://leetcode.com/problems/reverse-string/",
+      "roadmap_url": "https://algomap.io/problems/reverse-string"
+    },
+    {
+      "topic": "Heaps",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 347,
+      "slug": "top-k-frequent-elements",
+      "problem_url": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "roadmap_url": "https://algomap.io/problems/top-k-frequent-elements"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Valid Perfect Square",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 367,
+      "slug": "valid-perfect-square",
+      "problem_url": "https://leetcode.com/problems/valid-perfect-square/",
+      "roadmap_url": "https://algomap.io/problems/valid-perfect-square"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Ransom Note",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 383,
+      "slug": "ransom-note",
+      "problem_url": "https://leetcode.com/problems/ransom-note/",
+      "roadmap_url": "https://algomap.io/problems/ransom-note"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Is Subsequence",
+      "difficulty": "Easy",
+      "difficulty_score": "4.5/10",
+      "leetcode_id": 392,
+      "slug": "is-subsequence",
+      "problem_url": "https://leetcode.com/problems/is-subsequence/",
+      "roadmap_url": "https://algomap.io/problems/is-subsequence"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Pacific Atlantic Water Flow",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 417,
+      "slug": "pacific-atlantic-water-flow",
+      "problem_url": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+      "roadmap_url": "https://algomap.io/problems/pacific-atlantic-water-flow"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium",
+      "difficulty_score": "6/10",
+      "leetcode_id": 424,
+      "slug": "longest-repeating-character-replacement",
+      "problem_url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "roadmap_url": "https://algomap.io/problems/longest-repeating-character-replacement"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Fibonacci Number",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 509,
+      "slug": "fibonacci-number",
+      "problem_url": "https://leetcode.com/problems/fibonacci-number/",
+      "roadmap_url": "https://algomap.io/problems/fibonacci-number"
+    },
+    {
+      "topic": "Trees",
+      "title": "Minimum Absolute Difference in BST",
+      "difficulty": "Easy",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 530,
+      "slug": "minimum-absolute-difference-in-bst",
+      "problem_url": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/",
+      "roadmap_url": "https://algomap.io/problems/minimum-absolute-difference-in-bst"
+    },
+    {
+      "topic": "Trees",
+      "title": "Diameter of Binary Tree",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 543,
+      "slug": "diameter-of-binary-tree",
+      "problem_url": "https://leetcode.com/problems/diameter-of-binary-tree/",
+      "roadmap_url": "https://algomap.io/problems/diameter-of-binary-tree"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Permutation in String",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 567,
+      "slug": "permutation-in-string",
+      "problem_url": "https://leetcode.com/problems/permutation-in-string/",
+      "roadmap_url": "https://algomap.io/problems/permutation-in-string"
+    },
+    {
+      "topic": "Trees",
+      "title": "Subtree of Another Tree",
+      "difficulty": "Medium",
+      "difficulty_score": "5.5/10",
+      "leetcode_id": 572,
+      "slug": "subtree-of-another-tree",
+      "problem_url": "https://leetcode.com/problems/subtree-of-another-tree/",
+      "roadmap_url": "https://algomap.io/problems/subtree-of-another-tree"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Maximum Average Subarray I",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 643,
+      "slug": "maximum-average-subarray-i",
+      "problem_url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+      "roadmap_url": "https://algomap.io/problems/maximum-average-subarray-i"
+    },
+    {
+      "topic": "Stacks",
+      "title": "Baseball Game",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 682,
+      "slug": "baseball-game",
+      "problem_url": "https://leetcode.com/problems/baseball-game/",
+      "roadmap_url": "https://algomap.io/problems/baseball-game"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 695,
+      "slug": "max-area-of-island",
+      "problem_url": "https://leetcode.com/problems/max-area-of-island/",
+      "roadmap_url": "https://algomap.io/problems/max-area-of-island"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "difficulty_score": "3/10",
+      "leetcode_id": 704,
+      "slug": "binary-search",
+      "problem_url": "https://leetcode.com/problems/binary-search/",
+      "roadmap_url": "https://algomap.io/problems/binary-search"
+    },
+    {
+      "topic": "Stacks",
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 739,
+      "slug": "daily-temperatures",
+      "problem_url": "https://leetcode.com/problems/daily-temperatures/",
+      "roadmap_url": "https://algomap.io/problems/daily-temperatures"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Network Delay Time (Dijkstra's Algorithm)",
+      "difficulty": "Medium",
+      "difficulty_score": "8.5/10",
+      "leetcode_id": 743,
+      "slug": "network-delay-time",
+      "problem_url": "https://leetcode.com/problems/network-delay-time/",
+      "roadmap_url": "https://algomap.io/problems/network-delay-time"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Min Cost Climbing Stairs",
+      "difficulty": "Easy",
+      "difficulty_score": "6/10",
+      "leetcode_id": 746,
+      "slug": "min-cost-climbing-stairs",
+      "problem_url": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+      "roadmap_url": "https://algomap.io/problems/min-cost-climbing-stairs"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Jewels and Stones",
+      "difficulty": "Easy",
+      "difficulty_score": "3/10",
+      "leetcode_id": 771,
+      "slug": "jewels-and-stones",
+      "problem_url": "https://leetcode.com/problems/jewels-and-stones/",
+      "roadmap_url": "https://algomap.io/problems/jewels-and-stones"
+    },
+    {
+      "topic": "Binary Search",
+      "title": "Koko Eating Bananas",
+      "difficulty": "Medium",
+      "difficulty_score": "7/10",
+      "leetcode_id": 875,
+      "slug": "koko-eating-bananas",
+      "problem_url": "https://leetcode.com/problems/koko-eating-bananas/",
+      "roadmap_url": "https://algomap.io/problems/koko-eating-bananas"
+    },
+    {
+      "topic": "Linked Lists",
+      "title": "Middle of the Linked List",
+      "difficulty": "Easy",
+      "difficulty_score": "6/10",
+      "leetcode_id": 876,
+      "slug": "middle-of-the-linked-list",
+      "problem_url": "https://leetcode.com/problems/middle-of-the-linked-list/",
+      "roadmap_url": "https://algomap.io/problems/middle-of-the-linked-list"
+    },
+    {
+      "topic": "Heaps",
+      "title": "K Closest Points to Origin",
+      "difficulty": "Medium",
+      "difficulty_score": "6.5/10",
+      "leetcode_id": 973,
+      "slug": "k-closest-points-to-origin",
+      "problem_url": "https://leetcode.com/problems/k-closest-points-to-origin/",
+      "roadmap_url": "https://algomap.io/problems/k-closest-points-to-origin"
+    },
+    {
+      "topic": "2 Pointers",
+      "title": "Squares of a Sorted Array",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 977,
+      "slug": "squares-of-a-sorted-array",
+      "problem_url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+      "roadmap_url": "https://algomap.io/problems/squares-of-a-sorted-array"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Rotting Oranges",
+      "difficulty": "Medium",
+      "difficulty_score": "8/10",
+      "leetcode_id": 994,
+      "slug": "rotting-oranges",
+      "problem_url": "https://leetcode.com/problems/rotting-oranges/",
+      "roadmap_url": "https://algomap.io/problems/rotting-oranges"
+    },
+    {
+      "topic": "Sliding Window",
+      "title": "Max Consecutive Ones III",
+      "difficulty": "Medium",
+      "difficulty_score": "5/10",
+      "leetcode_id": 1004,
+      "slug": "max-consecutive-ones-iii",
+      "problem_url": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+      "roadmap_url": "https://algomap.io/problems/max-consecutive-ones-iii"
+    },
+    {
+      "topic": "Heaps",
+      "title": "Last Stone Weight",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 1046,
+      "slug": "last-stone-weight",
+      "problem_url": "https://leetcode.com/problems/last-stone-weight/",
+      "roadmap_url": "https://algomap.io/problems/last-stone-weight"
+    },
+    {
+      "topic": "Dynamic Programming",
+      "title": "Longest Common Subsequence",
+      "difficulty": "Medium",
+      "difficulty_score": "10/10",
+      "leetcode_id": 1143,
+      "slug": "longest-common-subsequence",
+      "problem_url": "https://leetcode.com/problems/longest-common-subsequence/",
+      "roadmap_url": "https://algomap.io/problems/longest-common-subsequence"
+    },
+    {
+      "topic": "Hashmaps & Sets",
+      "title": "Maximum Number of Balloons",
+      "difficulty": "Easy",
+      "difficulty_score": "6/10",
+      "leetcode_id": 1189,
+      "slug": "maximum-number-of-balloons",
+      "problem_url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+      "roadmap_url": "https://algomap.io/problems/maximum-number-of-balloons"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Min Cost to Connect All Points (Prim's Algorithm to Create MST)",
+      "difficulty": "Medium",
+      "difficulty_score": "8.5/10",
+      "leetcode_id": 1584,
+      "slug": "min-cost-to-connect-all-points",
+      "problem_url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+      "roadmap_url": "https://algomap.io/problems/min-cost-to-connect-all-points"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Merge Strings Alternately",
+      "difficulty": "Easy",
+      "difficulty_score": "4/10",
+      "leetcode_id": 1768,
+      "slug": "merge-strings-alternately",
+      "problem_url": "https://leetcode.com/problems/merge-strings-alternately/",
+      "roadmap_url": "https://algomap.io/problems/merge-strings-alternately"
+    },
+    {
+      "topic": "Graphs",
+      "title": "Find if Path Exists in Graph",
+      "difficulty": "Easy",
+      "difficulty_score": "5/10",
+      "leetcode_id": 1971,
+      "slug": "find-if-path-exists-in-graph",
+      "problem_url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+      "roadmap_url": "https://algomap.io/problems/find-if-path-exists-in-graph"
+    },
+    {
+      "topic": "Arrays & Strings",
+      "title": "Find Closest Number to Zero",
+      "difficulty": "Easy",
+      "difficulty_score": "3/10",
+      "leetcode_id": 2239,
+      "slug": "find-closest-number-to-zero",
+      "problem_url": "https://leetcode.com/problems/find-closest-number-to-zero/description/",
+      "roadmap_url": "https://algomap.io/problems/find-closest-number-to-zero"
+    }
+  ]
+}
