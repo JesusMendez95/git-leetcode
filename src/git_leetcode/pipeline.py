@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 from dataclasses import asdict
 from datetime import date, datetime
@@ -56,22 +57,38 @@ def ensure_git_repo(repo_dir: Path, remote_url: str | None) -> None:
 
 
 def publish_changes(repo_dir: Path, commit_message: str) -> None:
+    target_branch = "develop"
+    try:
+        _run_git_command(repo_dir, ["checkout", target_branch])
+    except RuntimeError:
+        _run_git_command(repo_dir, ["checkout", "-b", target_branch])
+
     _run_git_command(repo_dir, ["add", "."])
     status = _run_git_command(repo_dir, ["status", "--porcelain"])
     if not status:
         return
-    _run_git_command(repo_dir, ["commit", "-m", commit_message])
+
+    commit_name = os.getenv("GIT_COMMIT_NAME") or os.getenv("GITHUB_USERNAME")
+    commit_email = os.getenv("GIT_COMMIT_EMAIL")
+    if not commit_email and commit_name:
+        commit_email = f"{commit_name}@users.noreply.github.com"
+
+    commit_args = ["commit", "-m", commit_message]
+    if commit_name and commit_email:
+        commit_args = [
+            "-c",
+            f"user.name={commit_name}",
+            "-c",
+            f"user.email={commit_email}",
+            *commit_args,
+        ]
+    _run_git_command(repo_dir, commit_args)
 
     remotes = _run_git_command(repo_dir, ["remote"])
     if "origin" not in remotes.splitlines():
         raise RuntimeError("No existe remote origin. Configuralo para hacer push.")
 
-    branch = _run_git_command(repo_dir, ["rev-parse", "--abbrev-ref", "HEAD"])
-    if branch == "HEAD":
-        branch = "main"
-        _run_git_command(repo_dir, ["checkout", "-B", branch])
-
-    _run_git_command(repo_dir, ["push", "-u", "origin", branch])
+    _run_git_command(repo_dir, ["push", "-u", "origin", target_branch])
 
 
 def run_daily_pipeline(
