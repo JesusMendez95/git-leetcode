@@ -13,7 +13,6 @@ Automatiza un flujo diario para retos de LeetCode usando el roadmap de AlgoMap:
 - `data/algomap_challenges.json`: catalogo de retos.
 - `solutions/python/`: soluciones.
 - `docs/<id-slug>/process.md`: documentacion completa del reto.
-- `docs/<id-slug>/screenshots/`: evidencia de envio exitoso.
 - `state/daily_state.json`: historial de ejecuciones.
 
 ## Instalacion
@@ -47,17 +46,7 @@ bash scripts/setup_git_remote.sh git-leetcode
 
 ## Ejecucion diaria
 
-Primera corrida (permite continuar sin screenshot):
-
-```bash
-python scripts/run_daily.py --allow-missing-screenshot --skip-push
-```
-
-Despues de resolver y enviar en LeetCode, adjunta screenshot en:
-
-`docs/<id-slug>/screenshots/<YYYY-MM-DD>-success.png`
-
-Luego ejecuta:
+Ejecucion local:
 
 ```bash
 python scripts/run_daily.py
@@ -73,4 +62,4 @@ El log queda en `logs/daily.log`.
 
 ## Notas de documentacion
 
-- `process.md` incluye metadata, descripcion oficial del problema, solucion, enfoque, diagrama Mermaid, desglose del codigo, justificacion del algoritmo, complejidad y evidencia.
+- `process.md` incluye metadata, descripcion oficial del problema, solucion, enfoque, diagrama Mermaid, desglose del codigo, justificacion del algoritmo y complejidad.

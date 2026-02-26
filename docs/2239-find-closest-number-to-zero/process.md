@@ -1,6 +1,6 @@
 # Find Closest Number to Zero
 
-- Fecha: 2026-02-25
+- Fecha: 2026-02-26
 - Topic: Arrays & Strings
 - Dificultad: Easy
 - LeetCode ID: 2239
@@ -103,4 +103,4 @@ Tiempo O(n), espacio O(1).
 
 ## Evidencia
 
-Pendiente de adjuntar screenshot de envio exitoso.
+No aplica en este flujo automatico.

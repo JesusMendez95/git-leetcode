@@ -24,17 +24,9 @@ def write_docs(
     result: SolveResult,
     problem_details: ProblemDetails,
     run_date: date,
-    screenshot_path: Path | None,
 ) -> Path:
     target_dir = _challenge_dir(base_docs_dir, result)
-    screenshots_dir = target_dir / "screenshots"
     target_dir.mkdir(parents=True, exist_ok=True)
-    screenshots_dir.mkdir(parents=True, exist_ok=True)
-
-    screenshot_block = "Pendiente de adjuntar screenshot de envio exitoso."
-    if screenshot_path and screenshot_path.exists():
-        rel = screenshot_path.relative_to(target_dir)
-        screenshot_block = f"![Envio exitoso]({rel.as_posix()})"
 
     walkthrough_block = "\n".join(
         f"{idx}. {step}" for idx, step in enumerate(result.walkthrough_steps, start=1)
@@ -69,7 +61,7 @@ def write_docs(
         "## Complejidad\n\n"
         f"{result.complexity}\n\n"
         "## Evidencia\n\n"
-        f"{screenshot_block}\n"
+        "No aplica en este flujo automatico.\n"
     )
 
     process_path = target_dir / "process.md"

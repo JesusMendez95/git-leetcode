@@ -78,7 +78,6 @@ def run_daily_pipeline(
     repo_dir: Path,
     roadmap_url: str,
     run_date: date,
-    allow_missing_screenshot: bool,
     skip_push: bool,
     remote_url: str | None,
     force_problem_id: int | None = None,
@@ -102,20 +101,11 @@ def run_daily_pipeline(
     problem_details = fetch_problem_details(challenge.slug, challenge.title)
     solution_path = write_solution_file(repo_dir / "solutions", result)
 
-    doc_dir = repo_dir / "docs" / f"{challenge.leetcode_id}-{challenge.slug}"
-    screenshot_path = doc_dir / "screenshots" / f"{run_date.isoformat()}-success.png"
-    if not screenshot_path.exists() and not allow_missing_screenshot:
-        raise RuntimeError(
-            "Falta screenshot de envio exitoso. "
-            f"Adjunta: {screenshot_path} y vuelve a ejecutar."
-        )
-
     process_path = write_docs(
         base_docs_dir=repo_dir / "docs",
         result=result,
         problem_details=problem_details,
         run_date=run_date,
-        screenshot_path=screenshot_path if screenshot_path.exists() else None,
     )
 
     state = _load_state(state_path)
@@ -126,7 +116,7 @@ def run_daily_pipeline(
         "problem_details": problem_details_to_dict(problem_details),
         "solution_path": str(solution_path.relative_to(repo_dir)),
         "documentation_path": str(process_path.relative_to(repo_dir)),
-        "screenshot_path": str(screenshot_path.relative_to(repo_dir)) if screenshot_path.exists() else None,
+        "screenshot_path": None,
     }
     state["history"] = [h for h in state.get("history", []) if h.get("date") != run_date.isoformat()]
     state["history"].append(entry)

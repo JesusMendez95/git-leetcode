@@ -39,11 +39,6 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Ejecuta reto diario + documentacion + git push.")
     parser.add_argument("--date", dest="run_date", help="Fecha ISO (YYYY-MM-DD)")
     parser.add_argument("--skip-push", action="store_true", help="No hace commit/push")
-    parser.add_argument(
-        "--allow-missing-screenshot",
-        action="store_true",
-        help="Permite generar artefactos sin screenshot",
-    )
     parser.add_argument("--force-problem-id", type=int, help="Fuerza un reto por LeetCode ID")
     args = parser.parse_args()
 
@@ -55,7 +50,6 @@ def main() -> None:
         repo_dir=repo_dir,
         roadmap_url=roadmap_url,
         run_date=_parse_date(args.run_date),
-        allow_missing_screenshot=args.allow_missing_screenshot,
         skip_push=args.skip_push,
         remote_url=remote_url,
         force_problem_id=args.force_problem_id,
@@ -65,7 +59,6 @@ def main() -> None:
     print(f"- Reto: {entry['challenge']['leetcode_id']} {entry['challenge']['title']}")
     print(f"- Solucion: {entry['solution_path']}")
     print(f"- Documentacion: {entry['documentation_path']}")
-    print(f"- Screenshot: {entry['screenshot_path']}")
 
 
 if __name__ == "__main__":
